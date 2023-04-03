@@ -121,7 +121,7 @@ app.get('/callback', function(req, res) {
 
         // we can also pass the token to the browser to make requests from there
         // used to be /#
-        res.redirect('https://gleeful-bubblegum-a34a18.netlify.app/home/' +
+        res.redirect('https://curatedshuffle.netlify.app/home/' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
