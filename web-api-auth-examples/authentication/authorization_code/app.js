@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '8b475aa1a9774f11bc38e082a8cb8f6b'; // Your client id
 var client_secret = '7a1edd382f804d90b4b9d8704c40a727'; // Your secret
-var redirect_uri = 'https://curatedshuffleauthserver.onrender.com/callback'; // Your redirect uri
+var redirect_uri = 'https://curatedshuffleauthserver.onrender.com/callback';
 
 /**
  * Generates a random string containing numbers and letters
@@ -121,7 +121,7 @@ app.get('/callback', function(req, res) {
 
         // we can also pass the token to the browser to make requests from there
         // used to be /#
-        res.redirect('http://localhost:3000/home/' +
+        res.redirect('https://gleeful-bubblegum-a34a18.netlify.app/home/' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
