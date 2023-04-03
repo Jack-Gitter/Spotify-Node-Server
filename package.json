@@ -4,7 +4,7 @@
   "description": "auth server for spotify web app",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./web-api-auth-examples/authentication/authorization_code/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
